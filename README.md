@@ -41,7 +41,7 @@ sudo apt install python3-venv
         1. templates
             * `index.html`
 
-#### In the templates folder put a file named __index.html__
+#### In the templates folder put a file named `index.html`
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -56,7 +56,7 @@ sudo apt install python3-venv
 </html>
 ```
 
-#### Basic __app.py__ setup:
+#### Basic `app.py` setup:
 ```python
 from quart import Quart, render_template
 
@@ -70,11 +70,11 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```
 
-#### Run the __app.py__ and navigate to http://127.0.0.1:5000
+#### Run the `app.py` and navigate to http://127.0.0.1:5000
 
 ## To make new route:
-#### Make new file inside __templates__ folder called: __about.html__
-   - Inside the __about.html__ add the following:
+#### Make new file inside `templates` folder called: `about.html`
+   - Inside the `about.html` add the following:
         ```html
         <!DOCTYPE html>
         <html lang="en">
@@ -89,10 +89,10 @@ if __name__ == '__main__':
         </html>
         ```
 
-#### Inside the __app.py__:
+#### Inside the `app.py`:
 ```python
 @app.route('/about')
 async def about():
     return await render_template('about.html')
 ```
-#### To view the newly created route please restart the __app.py__ and navigate to: http://127.0.0.1:5000/about
+#### To view the newly created route please restart the `app.py` and navigate to: http://127.0.0.1:5000/about
