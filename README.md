@@ -28,42 +28,42 @@
 - When you are done working in the virtual environment, you can deactivate it by running:
 
 #### Open code editor
-    - Open your project folder.
-    - Create the following files:
-        - Files:
-            1. app.py
-        - Directories
-            1. templates
-               * index.html
+- Open your project folder.
+- Create the following files:
+    - Files:
+        1. app.py
+    - Directories
+        1. templates
+            * index.html
 
 #### In the templates folder put a file named __index.html__
-    ```html
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Basic Quart Page</title>
-    </head>
-    <body>
-        <h1>Index Page!</h1>
-    </body>
-    </html>
-    ```
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Quart Page</title>
+</head>
+<body>
+    <h1>Index Page!</h1>
+</body>
+</html>
+```
 
 #### Basic __app.py__ setup:
-    ```python
-    from quart import Quart, render_template
+```python
+from quart import Quart, render_template
 
-    app = Quart(__name__)
+app = Quart(__name__)
 
-    @app.route('/')
-    async def root():
-        return await render_template('index.html')
-    
-    if __name__ == '__main__':
-        app.run(debug=True)
-    ```
+@app.route('/')
+async def root():
+    return await render_template('index.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
+```
 
 #### Run the __app.py__ and navigate to http://127.0.0.1:5000
 
@@ -85,9 +85,9 @@
         ```
 
 #### Inside the __app.py__:
-    ```python
-    @app.route('/about')
-    async def about():
-        return await render_template('about.html')
-    ```
+```python
+@app.route('/about')
+async def about():
+    return await render_template('about.html')
+```
 #### To view the newly created route please restart the __app.py__ and navigate to: http://127.0.0.1:5000/about
