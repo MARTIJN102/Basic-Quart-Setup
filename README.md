@@ -1,29 +1,34 @@
 ## Setup Quart using venv || Linux
 #### Install Python (if not already installed):
-
-       $ python3 --version
+```
+python3 --version
+```
 #### If it's not installed, you can install it using:
-
-       $ sudo apt update
-       $ sudo apt install python3
+```
+sudo apt update
+sudo apt install python3
+```
 
 #### Install the Python3-venv Package (if not already installed):
-
-       $ sudo apt install python3-venv
+```
+sudo apt install python3-venv
+```
 #### Create a Virtual Environment:
 - Navigate to the directory where you want to create your virtual environment and run:
-
-       $ python3 -m venv myenv
+    ```
+    python3 -m venv myenv
+    ```
 #### Activate the Virtual Environment:
 - To activate the virtual environment, run:
-
-       $ source myenv/bin/activate
+    ```
+    source myenv/bin/activate
+    ```
 - After activation, your command prompt will change to indicate that you are now working inside myenv.
 #### Install Packages Inside the Virtual Environment:
 - With the virtual environment activated, you can install Python packages using pip. For example:
-
-       $ pip install quart
-
+    ```
+    pip install quart
+    ```
 #### Deactivate the Virtual Environment:
 - When you are done working in the virtual environment, you can deactivate it by running:
 
@@ -31,10 +36,10 @@
 - Open your project folder.
 - Create the following files:
     - Files:
-        1. app.py
+        * `app.py`
     - Directories
         1. templates
-            * index.html
+            * `index.html`
 
 #### In the templates folder put a file named __index.html__
 ```html
