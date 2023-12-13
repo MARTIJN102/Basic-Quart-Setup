@@ -94,4 +94,4 @@ if __name__ == '__main__':
 async def about():
     return await render_template('about.html')
 ```
-#### To view the newly created route please restart the `app.py` and navigate to: http://127.0.0.1:5000/about
+#### To view the newly created route restart the `app.py` and navigate to: http://127.0.0.1:5000/about
