@@ -38,8 +38,7 @@ sudo apt install python3-venv
     - Files:
         * `app.py`
     - Directories
-        1. templates
-            * `index.html`
+        * `templates/index.html`
 
 #### In the templates folder put a file named `index.html`
 ```html
